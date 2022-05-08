@@ -1,5 +1,5 @@
 import string
-plain_text = "Wake up MF"
+plain_text = "cool seeing you here"
 shift = 7
 #shift = 7 is the cipher, to decipher take total of characters and subtract by shift.
 shift %= 26
@@ -21,5 +21,5 @@ def caeser(text, shift, alphabets):
     table2 = str.maketrans(final_alphabet, final_shifted_alphabet)
     return text.translate(table2)
 
-plain_text2 = "This is Doomsday"
+plain_text2 = "Throw rocks at homeless people for free cash."
 print(caeser(plain_text2, 7, [string.ascii_lowercase, string.ascii_uppercase, string.punctuation]))
